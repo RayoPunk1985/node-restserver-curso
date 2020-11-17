@@ -10,8 +10,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 // parse application/json
 app.use(bodyParser.json())
 
-app.get('/Usuarios', function(req, res) {
-    res.json('Get Usuarios');
+app.get('/Usuario', function(req, res) {
+    res.json('Get Usuario');
 });
 
 app.post('/Usuario', function(req, res) {
@@ -38,7 +38,7 @@ app.put('/Usuario/:id', function(req, res) {
 });
 
 app.delete('/Usuario', function(req, res) {
-    res.json('Delete Usuarios');
+    res.json('Delete Usuario');
 });
 app.listen(process.env.PORT, () => {
     console.log('escuchando puerto:', process.env.PORT);
