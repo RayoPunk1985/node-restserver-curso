@@ -92,7 +92,7 @@ app.delete('/Usuario/:id', function(req, res) {
         estado: false
     };
 
-    Usuario.findByIdAndUpdate(id, { cambiaEstado }, { new: true }, (err, usuarioBorrado) => {
+    Usuario.findByIdAndUpdate(id, cambiaEstado, { new: true }, (err, usuarioBorrado) => {
 
         if (err) {
             return res.status(400).json({
