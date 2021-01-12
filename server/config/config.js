@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+<< << << < HEAD
 //============================
 //puerto
 //============================
@@ -14,7 +14,9 @@ process.env.NODE_ENV = process.env.NODE_ENV || 'dev';
 //Base de Datos
 //============================
 
-=======
+===
+===
+=
 // ============================
 //  Puerto
 // ============================
@@ -45,20 +47,30 @@ process.env.SEED = process.env.SEED || 'este-es-el-seed-desarrollo';
 // ============================
 //  Base de datos
 // ============================
->>>>>>> 43b399f... listo todo bien
+>>>
+>>>
+>
+43 b399f...listo todo bien
 let urlDB;
 
 if (process.env.NODE_ENV === 'dev') {
-    urlDB = 'mongodb://localhost:27017/cafe';
-<<<<<<< HEAD
+    urlDB = 'mongodb://localhost:27017/cafe'; <<
+    <<
+    <<
+    <
+    HEAD
 
 } else {
     urlDB = process.env.MONGO_URL;
 }
 
-=======
+===
+===
+=
 } else {
     urlDB = process.env.MONGO_URI;
-}
->>>>>>> 43b399f... listo todo bien
+} >>>
+>>>
+>
+43 b399f...listo todo bien
 process.env.URLDB = urlDB;
